@@ -1,0 +1,104 @@
+[Main menu]
+Menu selection =WIFI Tool                                                      
+COM PORT =USB
+Baudrate=921600
+Boot timeout = infinite
+META connect timeout = 50000
+META log path = C:\
+
+[Connection]
+Authentication file=
+Certificate file=
+GUID={A5DCBF10-6530-11D2-901F-00C04FB951ED}
+BROM port filter=VID_0E8D&PID_0003
+Composite Preloader=0 
+Preloader single port filter=VID_0E8D&PID_2000
+Preloader composite port filter=VID_1004&PID_6000
+Kernel single port filter=VID_0E8D&PID_2007
+Kernel composite port filter=VID_0BB4&PID_2005
+First stage timeout(ms)=30000
+Second stage timout(ms)=45000
+Second stage delay(ms)=500
+Kernel COM port filter count(0~10)=8
+Kernel COM port filter type(BlackList/WhiteList)=WhiteList
+Kernel COM port filter PIDVID=VID_12D1&Subclass_12/VID_0E8D&PID_2040&MI_02/VID_0E8D&PID_2007/VID_0E8D&PID_2006&MI_02/VID_0BB4&PID_0005&MI_02/VID_1004&PID_6000/VID_0E8D&PID_202D/VID_0E8D&PID_200E&MI_01
+Query WCN Driver Ready=0
+NVRAM backup restore timout(ms)=40000
+
+[8k Acoustic FIR Tunning]
+Input file name=D:\HHHF_RFR_WB_1226.asc
+Output TX file name=D:\TXOUTPUT.txt
+Output RX file name=
+Direction=Rx
+Boundary=VOIP headset
+Equipment=Acqua
+File Format=Log dB
+Input ABS file name=
+
+[16k Acoustic FIR Tunning]
+Input file name=E:\SP Meta tool_files\Audio\Audio gain table\HHHF_RFR_WB_1226.asc
+Output TX file name=C:\Documents and Settings\mtk80761\桌面\sp meta tool hd recording\tx output.txt
+Output RX file name=C:\Documents and Settings\mtk80761\桌面\sp meta tool hd recording\rx output.txt
+Input ABS file name=                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+Equipment=Acqua
+File Format=Log dB
+Field0_MagdB=-16.568000 -13.887000 -10.963000 -8.140000 -5.896000 -4.032000 -2.499000 -1.147000 -0.301000 0.025000 -0.034000 0.042000                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+Boundary=3G Handset and Headset
+Direction=Tx
+
+[16k Acoustic FIR Tunning(HD Recording)]
+Input Wav file name=
+Output file name=D:\
+Output Wav file name=C:\Documents and Settings\mtk80761\桌面\sp meta tool hd recording
+Boundary=3G handsfree handheld
+Output TX file name=
+Output RX file name= 
+
+[16k Acoustic FIR Tunning(VR)]
+Output file name=D:\
+Output Wav file name=C:\Documents and Settings\mtk80761\桌面\sp meta tool hd recording
+Boundary=3G Handset and Headset                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+     
+[Dual-Mic. NR]
+Sealing_THD=25
+Step1Description=Record SLR pattern with the photo's configuration (main mic). The distance between mouth and main mic is 10cm. "With blocking" means covering glue  upon the mic  hole.
+Step2Description=Record SLR pattern with the photo's configuration (ref mic). The distance between mouth and ref mic is 10cm. "With blocking" means covering glue  upon the mic  hole.
+Step3Description=Record SLR pattern with the photo's configuration
+Step4Description=Record SLR pattern with the photo's configuration. (normal position)
+Step5Description=Record downlink wav, please make sure the receiver works well. (normal position)
+Step6Description=Record SLR pattern with the photo's configuration. If the main mic hole is close to the left side, phone position is 20 degrees up, otherwise phone position is  20 degrees down.
+Step7Description=Calculate coefficient based on the recorded file
+
+[Console Mode Connect]
+COM PORT = USB
+Find com port by number=no
+Fixed preloader com port number=4
+Fixed kernel com port number=5
+
+[Console Mode Nvram Test]
+Nvram database path=\\10.15.11.230\public1\ALPS_load\alps-mp-m0.mp9\alps-mp-m0.mp9-V1.23\k97v1_64_op09_lwctg_alps-mp-m0.mp9-V1.23_eng\APDB_MT6797_S01_alps-mp-m0.mp9_W16.05
+Modify count=6
+[Nvram Modify Group1]
+LID=AP_CFG_RDEB_FILE_WIFI_LID
+Variable=aucMacAddress[0]
+Value=0x00
+[Nvram Modify Group2]
+LID=AP_CFG_RDEB_FILE_WIFI_LID
+Variable=aucMacAddress[1]
+Value=0x0a
+[Nvram Modify Group3]
+LID=AP_CFG_RDEB_FILE_WIFI_LID
+Variable=aucMacAddress[2]
+Value=0x0b
+[Nvram Modify Group4]
+LID=AP_CFG_RDEB_FILE_WIFI_LID
+Variable=aucMacAddress[3]
+Value=0x0c
+[Nvram Modify Group5]
+LID=AP_CFG_RDEB_FILE_WIFI_LID
+Variable=aucMacAddress[4]
+Value=0x0d
+[Nvram Modify Group6]
+LID=AP_CFG_RDEB_FILE_WIFI_LID
+Variable=aucMacAddress[5]
+Value=0x0e

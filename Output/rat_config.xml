@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting>
+        <optr></optr>
+        <optrseg></optrseg>
+        <rat>C/Lf/Lt/W/T/G</rat>
+        <default>0</default>
+        <options>
+            <option name="C2K_OM_6M">C/Lf/Lt/W/T/G</option>
+            <option name="C2K_OM_5M">C/Lf/Lt/W/G</option>
+            <option name="C2K_OM_4M">C/Lf/Lt/G</option>
+            <option name="C2K_OM_3M">C/W/G</option>
+            <option name="GSM 5M">Lf/Lt/W/T/G</option>
+            <option name="WCDMA 4M">Lf/Lt/W/G</option>
+            <option name="TDS 4M">Lf/Lt/T/G</option>
+            <option name="TDS 3M">Lt/T/G</option>
+        </options>
+    </setting>
+    <setting>
+        <optr>OP09</optr>
+        <optrseg>SEGC</optrseg>
+        <rat>C/Lf/Lt/W/T/G</rat>
+        <default>0</default>
+        <options>
+            <option name="TDD 6M">C/Lf/Lt/W/T/G</option>
+            <option name="TDS 5M">Lf/Lt/W/T/G</option>
+            <option name="TDS 4M">Lf/Lt/T/G</option>
+            <option name="TDS 3M">Lt/T/G</option>
+        </options>
+    </setting>
+    <setting>
+        <optr>OP01</optr>
+        <optrseg>SEGC</optrseg>
+        <rat>C/Lf/Lt/W/T/G</rat>
+        <default>0</default>
+        <options>
+            <option name="TDD 6M">C/Lf/Lt/W/T/G</option>
+            <option name="TDS 5M">Lf/Lt/W/T/G</option>
+        </options>
+    </setting>
+    <setting>
+        <optr>OP02</optr>
+        <optrseg>SEGA</optrseg>
+        <rat>Lf/Lt/W/T/G</rat>
+        <default>0</default>
+        <options>
+            <option name="CU 5M">Lf/Lt/W/T/G</option>
+            <option name="CU 4M">Lf/Lt/W/G</option>
+        </options>
+    </setting>
+    <setting>
+        <optr>OP09</optr>
+        <optrseg>SEGDEFAULT</optrseg>
+        <rat>"C/Lf/Lt/W/G"</rat>
+        <default>0</default>
+        <options>
+            <option name="CT 5M">C/Lf/Lt/W/G</option>
+            <option name="CT 4M">C/Lf/Lt/G</option>
+        </options>
+    </setting>
+    <setting>
+        <optr>OP07</optr>
+        <optrseg>SEGDEFAULT</optrseg>
+        <rat>"C/Lf/Lt/W/G"</rat>
+        <default>0</default>
+        <options>
+            <option name="NA 5M">C/Lf/Lt/W/G</option>
+            <option name="NA 4M">Lf/Lt/W/G</option>
+        </options>
+    </setting>
+    <setting>
+        <optr>OP08</optr>
+        <optrseg>SEGDEFAULT</optrseg>
+        <rat>"C/Lf/Lt/W/G"</rat>
+        <default>0</default>
+        <options>
+            <option name="NA 5M">C/Lf/Lt/W/G</option>
+            <option name="NA 4M">Lf/Lt/W/G</option>
+        </options>
+    </setting>
+    <setting>
+        <optr>OP12</optr>
+        <optrseg>SEGDEFAULT</optrseg>
+        <rat>"C/Lf/Lt/W/G"</rat>
+        <default>0</default>
+        <options>
+            <option name="NA 5M">C/Lf/Lt/W/G</option>
+            <option name="NA 4M">Lf/Lt/W/G</option>
+        </options>
+    </setting>
+    <setting>
+        <optr>OP20</optr>
+        <optrseg>SEGDEFAULT</optrseg>
+        <rat>"C/Lf/Lt/W/G"</rat>
+        <default>0</default>
+        <options>
+            <option name="NA 5M">C/Lf/Lt/W/G</option>
+            <option name="NA 4M">Lf/Lt/W/G</option>
+        </options>
+    </setting>
+</settings>

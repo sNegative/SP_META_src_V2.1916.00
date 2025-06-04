@@ -1,0 +1,52 @@
+Error 00001. 0x300010 (Thread 0x0E28):
+Resource leak: The memory block (0xE72B5E0) was never freed
+
+The memory block (0x0E72B5E0) [size: 72 bytes] was allocated with SysGetMem
+Call Tree:
+   0x00AAE087(=Meta2.exe:0x01:6AD087) system.pas#2450
+   0x00495CC3(=Meta2.exe:0x01:094CC3) D:\APP3\META_UI\Form\form_Main.cpp#508
+   0x00A3540B(=Meta2.exe:0x01:63440B) Forms.pas#2801
+   0x00A38F2D(=Meta2.exe:0x01:637F2D) Forms.pas#4361
+   0x00A4E35A(=Meta2.exe:0x01:64D35A) Controls.pas#4561
+   0x00A51FBB(=Meta2.exe:0x01:650FBB) Controls.pas#6242
+
+------------------------------------------
+Error 00139. 0x300010 (Thread 0x06A8):
+Resource leak: The memory block (0xD0D1914) was never freed
+
+The memory block (0x0D0D1914) [size: 36 bytes] was allocated with SysGetMem
+Call Tree:
+   0x00AAE087(=Meta2.exe:0x01:6AD087) system.pas#2450
+   0x009F18EE(=Meta2.exe:0x01:5F08EE) WinHelpViewer.pas#655
+   0x00ABFE79(=Meta2.exe:0x01:6BEE79)
+   0x00AC004F(=Meta2.exe:0x01:6BF04F)
+
+------------------------------------------
+Functions called:
+ fflush (8 times)
+ strcpy (1 times)
+ vsnprintf (28 times)
+ log10 (41 times)
+ memset (14 times)
+ pow (2 times)
+ delete (63 times)
+ free (8 times)
+ memmove (6 times)
+ new (68 times)
+ SysReallocMem (3720 times)
+ SysFreeMem (241014 times)
+ SysGetMem (241016 times)
+ lstrlenA (1 times)
+ lstrcpynA (4 times)
+ calloc (1 times)
+ strlen (262 times)
+ realloc (1 times)
+ strdup (1 times)
+ malloc (5 times)
+ memcpy (45 times)
+Resource types used:
+ object (68 allocs, 64 max)
+ memory block (241024 allocs, 71151 max)
+Modules used:
+ 00400000 11/25/2008 16:48:30 D:\APP3\META_UI\Output\Meta2.exe
+==========================================

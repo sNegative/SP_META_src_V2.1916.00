@@ -1,0 +1,327 @@
+<chipinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MT6620_REG.xsd">
+	<group name="FM Receiver Main Window" type="Status">
+		<Info name="RSSI">
+			<VarEx addr="0xE8" sb="0" eb="9" page="0"/>
+			<Handler func="RSSI" display="NATIVE"/>
+		</Info>
+		<Info name="RSSI_HEX">
+			<VarEx addr="0xE8" sb="0" eb="9" page="0"/>
+			<Handler func="RSSI_HEX" display="NATIVE"/>
+		</Info>
+		<Info name="RSSI_DBM">
+			<VarEx addr="0xE8" sb="0" eb="9" page="0"/>
+			<Handler func="RSSI_DBM" display="NATIVE"/>
+		</Info>
+		<Info name="STA_BW">
+			<VarEx addr="0xa1" sb="15" eb="15" page="0"/>
+			<Enum value="0" name="100KHz"/>
+			<Enum value="1" name="100KHz"/>
+			<Handler func="STA_BW" display="ENUM"/>
+		</Info>
+		<Info name="PAMD">
+			<VarEx addr="0xE9" sb="0" eb="7" page="0"/>
+			<Handler func="PAMD" display="NATIVE"/>
+		</Info>
+		<Info name="PAMD_HEX">
+			<VarEx addr="0xE9" sb="0" eb="7" page="0"/>
+			<Handler func="PAMD_HEX" display="NATIVE"/>
+		</Info>
+		<Info name="PAMD_DBM">
+			<VarEx addr="0xE9" sb="0" eb="7" page="0"/>
+			<Handler func="PAMD_DBM" display="NATIVE"/>
+		</Info>
+		<Info name="MR">
+			<VarEx addr="0x80" sb="0" eb="8" page="0"/>
+			<Handler func="MR" display="NATIVE"/>
+		</Info>
+		<Info name="STEREO_MONO">
+			<VarEx addr="0xF8" sb="10" eb="10" page="1"/>
+			<Enum value="0" name="Stereo"/>
+			<Enum value="1" name="Mono"/>
+			<Handler func="STEREO_MONO" display="ENUM"/>
+		</Info>
+		<Info name="BLEND_GAIN">
+			<VarEx addr="0xE2" sb="0" eb="6" page="1"/>
+			<Handler func="BLEND_GAIN" display="NATIVE"/>
+		</Info>
+		<Info name="BLEND_FILTER_NUMBER">
+			<VarEx addr="0xE2" sb="15" eb="15" page="1"/>
+			<Handler func="BLEND_FILTER_NUMBER" display="NATIVE"/>
+		</Info>
+		<Info name="SOFTMUTE_GMS">
+			<VarEx addr="0xF8" sb="4" eb="9" page="1"/>
+			<Handler func="SOFTMUTE_GMS" display="NATIVE"/>
+		</Info>
+		<Info name="SOFTMUTE_GFS">
+			<VarEx addr="0xF8" sb="4" eb="9" page="1"/>
+			<Handler func="SOFTMUTE_GFS" display="NATIVE"/>
+		</Info>
+		<Info name="DYNAMIC_GAIN">
+			<VarEx addr="0xFD" sb="0" eb="11" page="1"/>
+			<Handler func="DYNAMIC_GAIN" display="NATIVE"/>
+		</Info>
+		<Info name="PILOT_LOCKED_FLAG">
+			<VarEx addr="0xF8" sb="12" eb="12" page="1"/>
+			<Enum value="0" name="un-locked"/>
+			<Enum value="1" name="locked"/>
+			<Handler func="PILOT_LOCKED_FLAG" display="ENUM"/>
+		</Info>
+		<Info name="SOFTMUTE_SELECTION_FLAG">
+			<VarEx addr="0xF8" sb="15" eb="15" page="1"/>
+			<Enum value="0" name="Gms"/>
+			<Enum value="1" name="Gfs"/>
+			<Handler func="SOFTMUTE_SELECTION_FLAG" display="ENUM"/>
+		</Info>
+		<Info name="RSSI_HCC">
+			<VarEx addr="0xa0" sb="0" eb="2" page="1"/>
+			<VarEx addr="0xF5" sb="0" eb="10" page="1"/>
+			<Handler func="RSSI_HCC" display="NATIVE"/>
+		</Info>
+		<Info name="PAMD_HCC">
+			<VarEx addr="0xa0" sb="8" eb="10" page="1"/>
+			<VarEx addr="0xF7" sb="0" eb="10" page="1"/>
+			<Handler func="PAMD_HCC" display="NATIVE"/>
+		</Info>
+		<Info name="RSSI_OFF_B">
+			<VarEx addr="0xF4" sb="0" eb="10" page="1"/>
+			<Handler func="RSSI_OFF_B" display="NATIVE"/>
+		</Info>
+		<Info name="RSSI_OFF_H">
+			<VarEx addr="0xF5" sb="0" eb="10" page="1"/>
+			<Handler func="RSSI_OFF_H" display="NATIVE"/>
+		</Info>
+		<Info name="PAMD_OFF_B">
+			<VarEx addr="0xF6" sb="0" eb="10" page="1"/>
+			<Handler func="PAMD_OFF_B" display="NATIVE"/>
+		</Info>
+		<Info name="PAMD_OFF_H">
+			<VarEx addr="0xF7" sb="0" eb="10" page="1"/>
+			<Handler func="PAMD_OFF_H" display="NATIVE"/>
+		</Info>
+		<Info name="HCC_FILTER">
+			<VarEx addr="0xF8" sb="0" eb="3" page="1"/>
+			<Handler func="HCC_FILTER" display="NATIVE"/>
+		</Info>
+		<Info name="SOFTMUTE_STEP">
+			<VarEx addr="0xD8" sb="0" eb="5" page="1"/>
+			<Handler func="SOFTMUTE_STEP" display="NATIVE"/>
+		</Info>
+		<Info name="GAIN_COUNTER">
+			<VarEx addr="0xed" sb="7" eb="13" page="0"/>
+			<Handler func="GAIN_COUNTER" display="NATIVE"/>
+		</Info>
+		<Info name="PGA_GAIN">
+			<VarEx addr="0xEE" sb="0" eb="3" page="0"/>
+			<Handler func="PGA_GAIN" display="NATIVE"/>
+		</Info>
+		<Info name="LNA_GAIN">
+			<VarEx addr="0xEE" sb="4" eb="7" page="0"/>
+			<Handler func="LNA_GAIN" display="NATIVE"/>
+		</Info>
+		<Info name="PGA_GAIN_INDEX">
+			<VarEx addr="0xEE" sb="0" eb="3" page="0"/>
+			<Handler func="PGA_GAIN_INDEX" display="NATIVE"/>
+		</Info>
+		<Info name="LNA_GAIN_INDEX">
+			<VarEx addr="0xEE" sb="4" eb="7" page="0"/>
+			<Handler func="LNA_GAIN_INDEX" display="NATIVE"/>
+		</Info>
+		<Info name="TOTAL_GAIN">
+			<VarEx addr="0xEF" sb="8" eb="14" page="0"/>
+			<Handler func="TOTAL_GAIN" display="NATIVE"/>
+		</Info>
+		<Info name="PULSE_RATIO">
+			<VarEx addr="0xFA" sb="0" eb="9" page="0"/>
+			<Handler func="PULSE_RATIO" display="NATIVE"/>
+		</Info>
+		<Info name="FAST_PAMD">
+			<VarEx addr="0xE9" sb="8" eb="15" page="0"/>
+			<Handler func="FAST_PAMD" display="NATIVE"/>
+		</Info>
+		<Info name="POWER_DETECTOR">
+			<VarEx addr="0xEE" sb="12" eb="13" page="0"/>
+			<Handler func="POWER_DETECTOR" display="NATIVE"/>
+		</Info>
+		<Info name="CHIP_ID">
+			<VarEx addr="0x62" sb="0" eb="15"/>
+			<Handler func="CHIP_ID" display="NATIVE"/>
+		</Info>
+	</group>
+	<group name="FM Receiver Main Window" type="Settings">
+		<Info name="DECODE_MODE">
+			<VarEx addr="0xE0" sb="1" eb="1" page="1"/>
+			<Enum value="0" name="Auto"/>
+			<Enum value="1" name="Mono"/>
+			<Handler func="DECODE_MODE" display="ENUM"/>
+		</Info>
+		<Info name="STEREO_BLEND">
+			<VarEx addr="0xE1" sb="15" eb="15" page="1"/>
+			<Enum value="0" name="OFF"/>
+			<Enum value="1" name="ON"/>
+			<Handler func="STEREO_BLEND" display="NATIVE"/>
+		</Info>
+		<Info name="HCC">
+			<VarEx addr="0xCF" sb="4" eb="4" page="1"/>
+			<Enum value="0" name="OFF"/>
+			<Enum value="1" name="ON"/>
+			<Handler func="HCC" display="ENUM"/>
+		</Info>
+		<Info name="PAMD_THRESHOLD">
+			<VarEx addr="0xe3" sb="12" eb="15" page="1"/>
+			<Handler func="PAMD_THRESHOLD" display="NATIVE"/>
+		</Info>
+		<Info name="RSSI_THRESHOLD">
+			<VarEx addr="0xe3" sb="12" eb="15" page="1"/>
+			<Handler func="RSSI_THRESHOLD" display="NATIVE"/>
+		</Info>
+		<Info name="SOFTMUTE">
+			<VarEx addr="0xCF" sb="5" eb="5" page="1"/>
+			<Enum value="0" name="OFF"/>
+			<Enum value="1" name="ON"/>
+			<Handler func="SOFTMUTE" display="ENUM"/>
+		</Info>
+		<Info name="COSTAS">
+			<VarEx addr="0xe3" sb="15" eb="15" page="1"/>
+			<Enum value="0" name="COSTAS mode"/>
+			<Enum value="1" name="COSTAS mode"/>
+			<Handler func="COSTAS" display="NATIVE"/>
+		</Info>
+		<Info name="DE_EMPHASIS_LEV">
+			<VarEx addr="0xd4" sb="12" eb="13" page="1"/>
+			<Enum value="0" name="0us"/>
+			<Enum value="1" name="50us"/>
+			<Enum value="2" name="75us"/>
+			<Enum value="3" name="undefined"/>
+			<Handler func="DE_EMPHASIS_LEV" display="ENUM"/>
+		</Info>
+		<Info name="HL_SIDE">
+			<VarEx addr="0xCB" sb="0" eb="0" page="0"/>
+			<VarEx addr="0xF" sb="10" eb="10" page="0"/>
+			<Enum value="00" name="L-Side"/>
+			<Enum value="01" name="undefined"/>
+			<Enum value="10" name="undefined"/>
+			<Enum value="11" name="H-Side"/>
+			<Handler func="HL_SIDE" display="NATIVE"/>
+		</Info>
+		<Info name="DEMOD_BANDWIDTH">
+			<VarEx addr="0xA1" sb="15" eb="15" page="0"/>
+			<Enum value="0" name="Force Narror"/>
+			<Enum value="1" name="Force Narror"/>
+			<Handler func="DEMOD_BANDWIDTH" display="NATIVE"/>
+		</Info>
+		<Info name="DYNAMIC_LIMITER">
+			<VarEx addr="0xFA" sb="3" eb="3" page="1"/>
+			<Enum value="0" name="ON"/>
+			<Enum value="1" name="OFF"/>
+			<Handler func="DYNAMIC_LIMITER" display="NATIVE"/>
+		</Info>
+		<Info name="SOFTMUTE_RATE">
+			<VarEx addr="0xc8" sb="8" eb="14" page="1"/>
+			<Handler func="SOFTMUTE_RATE" display="NATIVE"/>
+		</Info>
+		<Info name="AFC">
+			<VarEx addr="0x63" sb="10" eb="10" page="0"/>
+			<Enum value="0" name="OFF"/>
+			<Enum value="1" name="ON"/>
+			<Handler func="AFC" display="NATIVE"/>
+		</Info>
+		<Info name="SET_BW">
+			<VarEx addr="0xA1" sb="15" eb="15" page="0"/>
+			<Enum value="0" name="force 100K"/>
+			<Enum value="1" name="force 100K"/>
+			<Handler func="SET_BW" display="ENUM"/>
+		</Info>
+		<Info name="CAP_ARRAY">
+			<VarEx addr="0x2F" sb="5" eb="14"/>
+			<Handler func="CAP_ARRAY" display="NATIVE"/>
+		</Info>
+		<Info name="DEMOD_TYPE">
+			<VarEx addr="0xDC" sb="8" eb="9" page="0"/>
+			<VarEx addr="0xD6" sb="12" eb="13" page="0"/>
+			<Enum value="0" name="Auto"/>
+			<Enum value="1" name="Arctan"/>
+			<Enum value="2" name="PLL"/>
+			<Enum value="3" name="BCCR"/>
+			<Handler func="DEMOD_TYPE" display="ENUM"/>
+		</Info>
+	</group>
+	<group name="FM Receiver Main Window" type="GLOBAL_INFO">
+		<Info name="PAGE_NUMBER">
+			<VarEx addr="0x9F" sb="0" eb="15"/>
+			<Enum value="0" name="page0"/>
+			<Enum value="1" name="page1"/>
+			<Enum value="2" name="page2"/>
+			<Enum value="3" name="page3"/>
+			<Handler func="NONE" display="NONE"/>
+		</Info>
+		<Info name="BT_SLEEP_STEP1">
+			<VarEx addr="0x80090074" sb="0" eb="15"/>
+			<Enum value="0x07EA" name="NONE"/>
+			<Handler func="NONE" display="NONE"/>
+		</Info>
+		<Info name="BT_SLEEP_STEP2">
+			<VarEx addr="0x80090070" sb="0" eb="15"/>
+			<Enum value="0x0001" name="NONE"/>
+			<Handler func="NONE" display="NONE"/>
+		</Info>
+		<Info name="FM_RESET">
+			<VarEx addr="0x80070048" sb="0" eb="15"/>
+			<Enum value="0x0" name="NONE"/>
+			<Enum value="0x3" name="NONE"/>
+			<Handler func="NONE" display="NONE"/>
+		</Info>
+		<Info name="CLOSE_64MHZ">
+			<VarEx addr="0x80050170" sb="0" eb="15"/>
+			<Enum value="0x10" name="NONE"/>
+			<Handler func="NONE" display="NONE"/>
+		</Info>
+	</group>
+	<group name="FM RDS Main Window" type="Block Counters">
+		<Info name="ACCEPTED">
+			<VarEx addr="0xC6" sb="0" eb="15" page="3"/>
+			<Handler func="ACCEPTED" display="NATIVE"/>
+		</Info>
+		<Info name="ERRORS">
+			<VarEx addr="0xC7" sb="0" eb="15" page="3"/>
+			<Handler func="ERRORS" display="NATIVE"/>
+		</Info>
+		<Info name="TOTAL_RECV">
+			<VarEx addr="0xC6" sb="0" eb="15" page="3"/>
+			<VarEx addr="0xC7" sb="0" eb="15" page="3"/>
+			<Handler func="TOTAL_RECV" display="NATIVE"/>
+		</Info>
+		<Info name="ERROR_RATE">
+			<VarEx addr="0xC6" sb="0" eb="15" page="3"/>
+			<VarEx addr="0xC7" sb="0" eb="15" page="3"/>
+			<Handler func="ERROR_RATE" display="NATIVE"/>
+		</Info>
+		<Info name="RDS_BC_RESET_BUTTON">
+			<VarEx addr="0xC8" sb="0" eb="15" page="0"/>
+			<Enum value="1" name="NONE"/>
+			<Enum value="2" name="NONE"/>
+			<Handler func="NONE" display="NONE"/>
+		</Info>
+		<Info name="RESETAL_PRERESET">
+			<VarEx addr="0xC8" sb="0" eb="15" page="3"/>
+			<Enum value="1" name="NONE"/>
+			<Enum value="2" name="NONE"/>
+			<Handler func="NONE" display="NONE"/>
+		</Info>
+		<Info name="RESETAL_BLOCKRESET">
+			<VarEx addr="0xDD" sb="0" eb="15" page="3"/>
+			<Enum value="1" name="NONE"/>
+			<Handler func="NONE" display="NONE"/>
+		</Info>
+		<Info name="RESETAL_WHOLERESET">
+			<VarEx addr="0xB0" sb="0" eb="15" page="3"/>
+			<Enum value="0x1" name="NONE"/>
+			<Handler func="NONE" display="NONE"/>
+		</Info>
+	</group>
+	<group name="FM Transmitter Main Window" type="RF and modulation control">
+		<Info name="Varactor_Value">
+			<VarEx addr="0x26" sb="6" eb="14" page="0"/>
+			<Handler func="Varactor_Value" display="NATIVE"/>
+		</Info>
+	</group>
+</chipinfo>
