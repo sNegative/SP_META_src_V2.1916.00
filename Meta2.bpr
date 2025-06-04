@@ -1,0 +1,533 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="Output\Meta2.exe"/>
+    <OBJFILES value="Output\Meta2.obj Output\META_factory_AboutU.obj Output\meta_utils.obj 
+      Output\com_utils.obj Output\form_BaseBand.obj Output\form_GetVersion.obj 
+      Output\form_Main.obj Output\get_version.obj Output\man_active_boot.obj 
+      Output\man_fdm.obj Output\man_metadll.obj Output\man_active.obj 
+      Output\MfSetupUtil.obj Output\misc.obj Output\NVRAM_LID_Parsing.obj 
+      Output\META_error_handler.obj Output\math_utils.obj Output\man_dll.obj 
+      Output\bb_cust_hw.obj Output\man_error.obj Output\uart.obj 
+      Output\ft_utils.obj Output\file_utils.obj Output\wifi_bb.obj 
+      Output\wifi_cprx.obj Output\wifi_cptx.obj Output\wifi_gnrl.obj 
+      Output\wifi_lf.obj Output\wifi_mac.obj Output\wifi_ps.obj 
+      Output\wifi_stop.obj Output\wifi_txcs.obj Output\wifi_txdc.obj 
+      Output\wifi_apc.obj Output\form_WiFiMCR.obj Output\form_WiFiBBCR.obj 
+      Output\misc_wifi.obj Output\form_WiFiScript.obj Output\wifi_sc.obj 
+      Output\nvram_lock.obj Output\wifi_txop.obj Output\form_WiFiEEPROM.obj 
+      Output\wifi_ee.obj Output\form_wifitxprofile.obj Output\form_WiFI.obj 
+      Output\misc_BT.obj Output\NVRAMEditor.obj Output\misc_imei.obj 
+      Output\misc_barcode.obj Output\misc_bb.obj Output\misc_audio.obj 
+      Output\man_handle.obj Output\form_BT.obj Output\bt_script.obj 
+      Output\bt_pkt.obj Output\bt_rf.obj Output\bt_hci.obj Output\str_utils.obj 
+      Output\bt_stop.obj Output\misc_ut.obj Output\bt_throughput.obj 
+      Output\bb_flash.obj Output\bt_con.obj Output\bb_pmic_reg.obj 
+      Output\form_PMICReg.obj Output\bt_power.obj Output\time_utils.obj 
+      Output\form_WiFiALC2400M.obj Output\wifi_alc.obj Output\form_Progress.obj 
+      Output\bt_info_mt6601.obj Output\form_FM.obj Output\misc_FM.obj 
+      Output\bt_hci_ft.obj Output\bt_id.obj Output\bt_info_mt6611.obj 
+      Output\bt_mt_parse.obj Output\bt_mt.obj Output\bt_mt_rs232.obj 
+      Output\bt_mt_meta.obj Output\rs232.obj Output\LogicalControlBase.obj 
+      Output\bb_reg.obj Output\form_WmWifi.obj Output\bb_x.obj 
+      Output\form_UnitTest.obj Output\fm_rds.obj Output\UUIDOp.obj 
+      Output\form_Sensor.obj Output\GSensor.obj Output\bt_ble.obj 
+      Output\form_WmWifimt6620.obj Output\fm_tx.obj Output\btRXStandalone.obj 
+      Output\GYROSensor.obj Output\CommandExecutor.obj Output\SDCardMonitor.obj 
+      Output\form_2GH_TX_Power_Profile.obj Output\form_5GHz_TX_Power_Profile.obj 
+      Output\form_NFC_TagDetected.obj Output\form_NFC_PeerToPeer.obj 
+      Output\form_NFC_RawCommand.obj Output\form_NFC.obj Output\misc_NFC.obj 
+      Output\form_NFC_TagAccessType1.obj Output\form_NFC_TagAccessType3.obj 
+      Output\form_NFC_TagAccessType2.obj Output\Logger.obj Output\SPMetaUT.obj 
+      Output\form_Crystal_Trim.obj Output\wifi_man.obj Output\SCERT.obj 
+      Output\AUTH.obj Output\ControlLocker.obj Output\misc_GPS.obj 
+      Output\ControlVisible.obj Output\form_MainPassword.obj 
+      Output\FormPositionSetting.obj Output\DialogInitialDir.obj 
+      Output\form_GPS.obj Output\form_GPSCWAutoTest.obj Output\GPS.obj 
+      Output\form_HdcpKey.obj Output\HDCP_Nvram.obj Output\bt_man.obj 
+      Output\form_DRMKey.obj Output\DRMKey.obj Output\nfc_pnfc_command.obj 
+      Output\nfc_polling.obj Output\nfc_reader.obj Output\nfc_reader_mode.obj 
+      Output\nfc_swp_test.obj Output\nfc_tx_carrier_als_on.obj 
+      Output\nfc_version_query.obj Output\nfc_virtual_card_function.obj 
+      Output\NFCMain.obj Output\reader_result.obj Output\form_NFC_reader.obj 
+      Output\nfc_card_mode.obj Output\nfc_loopback_test.obj 
+      Output\nfc_option_setting.obj Output\nfc_p2p.obj 
+      Output\form_SpecialTest.obj Output\specialtest_man.obj 
+      Output\misc_specialtest.obj Output\form_WiFiRSSICOMP.obj 
+      Output\argcargv.obj Output\CommandLineArguments.obj 
+      Output\ConsoleExcute.obj Output\ConsoleMode.obj Output\XGetopt.obj 
+      Output\form_RatConfig.obj Output\rat_config_man.obj 
+      Output\form_MultiSIM.obj Output\msim_man.obj 
+      Output\form_WiFi6632RSSICOMP.obj Output\form_AttestationKey.obj 
+      Output\AttestationKey.obj Output\form_MetaConnectTime.obj 
+      Output\hw_test.obj Output\fm_radio.obj"/>
+    <RESFILES value="Meta2.res Output\meta.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) factory\META_factory_AboutU.dfm Form\form_BaseBand.dfm 
+      Form\form_GetVersion.dfm Form\form_Main.dfm Form\WiFi\form_WiFiMCR.dfm 
+      Form\WiFi\form_WiFiBBCR.dfm Form\WiFi\form_WiFiScript.dfm 
+      Form\WiFi\form_WiFiEEPROM.dfm Form\WiFi\form_wifitxprofile.dfm 
+      Form\WiFi\form_WiFI.dfm &quot;NVRAM Editor\NVRAMEditor.dfm&quot; Form\BT\form_BT.dfm 
+      Form\form_PMICReg.dfm Form\WiFi\form_WiFiALC2400M.dfm 
+      Form\form_Progress.dfm Form\FM\form_FM.dfm Form\form_WmWifi.dfm 
+      Form\form_UnitTest.dfm Form\form_Sensor.dfm Form\form_WmWifimt6620.dfm 
+      Form\form_2GH_TX_Power_Profile.dfm Form\form_5GHz_TX_Power_Profile.dfm 
+      Form\form_NFC_TagDetected.dfm Form\form_NFC_PeerToPeer.dfm 
+      Form\form_NFC_RawCommand.dfm Form\form_NFC.dfm 
+      Form\form_NFC_TagAccessType1.dfm Form\form_NFC_TagAccessType3.dfm 
+      Form\form_NFC_TagAccessType2.dfm Form\form_Crystal_Trim.dfm 
+      Form\form_MainPassword.dfm Form\GPS\form_GPS.dfm 
+      Form\GPS\form_GPSCWAutoTest.dfm Form\form_HdcpKey.dfm 
+      Form\DRMKey\form_DRMKey.dfm NFC\nfc_reader_mode.dfm NFC\NFCMain.dfm 
+      NFC\reader_result.dfm NFC\form_NFC_reader.dfm Form\form_SpecialTest.dfm 
+      Form\form_WiFiRSSICOMP.dfm Form\RatConfig\form_RatConfig.dfm 
+      Form\MultiSIM\form_MultiSIM.dfm Form\form_WiFi6632RSSICOMP.dfm 
+      Form\AttestationKey\form_AttestationKey.dfm Form\form_MetaConnectTime.dfm"/>
+    <LIBFILES value="Output\hp661x_32.lib Output\hp663x2_32.lib Output\age1960_32.lib 
+      Output\aftdll.lib Output\hpe3631a_32.lib Output\iqv.lib 
+      Output\AgN4010WSODrv.lib Output\SLA_Challenge.lib Output\miodll.lib 
+      Output\TraceConversion.lib Output\eboot.lib Output\ATDSPLib_DLL.lib 
+      Output\BLOUD_ACF_DLL.lib Output\mt6620_fm_meta.lib Output\Controls.lib 
+      Output\HD_Record_FIR.lib Output\HdcpEncryption.lib Output\XMLParser.lib 
+      Output\visa32.lib Output\MetaCore.lib"/>
+    <LIBRARIES value="bcbsmp.lib dclusr.lib dbrtl.lib vclx.lib vcl.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib vclx.lib dbrtl.lib dclusr.lib bcbsmp.lib"/>
+    <PACKAGES value="rtl.bpi vcl.bpi vclx.bpi bcbsmp.bpi qrpt.bpi dbrtl.bpi vcldb.bpi 
+      bdertl.bpi ibsmp.bpi vcldbx.bpi teeui.bpi teedb.bpi tee.bpi teeqr.bpi 
+      ibxpress.bpi bcbie.bpi vclie.bpi inetdb.bpi inet.bpi nmfast.bpi dclocx.bpi 
+      bcb2kaxserver.bpi adortl.bpi"/>
+    <PATHCPP value=".;factory;factory;factory;Form;Form;Form;&quot;Get Version&quot;;Man;Man;Man;Man;MF_Setup;Misc;&quot;NVRAM Editor&quot;;&quot;NVRAM Editor&quot;;Misc;Man;Baseband;Man;Comm\UART;Misc;Misc;WiFi;WiFi;WiFi;WiFi;WiFi;WiFi;WiFi;WiFi;WiFi;WiFi;WiFi;Form\WiFi;Form\WiFi;Misc;Form\WiFi;WiFi;&quot;NVRAM Editor&quot;;WiFi;Form\WiFi;WiFi;Form\WiFi;Form\WiFi;Misc;&quot;NVRAM Editor&quot;;Misc;Misc;Misc;Misc;Man;Form\BT;BT;BT;BT;BT;Misc;BT;Misc;BT;Baseband;BT;Baseband;Form;BT;Misc;Form\WiFi;WiFi;Form;BT;Form\FM;Misc;BT;BT;BT;BT;BT;BT;BT;Comm\UART;General;Baseband;Form;Baseband;Form;FM;&quot;Get Version&quot;;Form;GSensor;BT;Form;FM;BT;GYROSensor;Misc;Misc;Form;Form;Form;Form;Form;Form;Misc;Form;Form;Form;Misc;Misc;Form;WiFi;Security;Security;Misc;Misc;Misc;Form;Misc;Misc;Form\GPS;Form\GPS;GPS;Form;HDCP;BT;Form\DRMKey;DRMKey;NFC;NFC;NFC;NFC;NFC;NFC;NFC;NFC;NFC;NFC;NFC;NFC;NFC;NFC;NFC;Form;SpecialTest;Misc;Form;Console;Console;Console;Console;Console;Form\RatConfig;RatConfig;Form\MultiSIM;MSIM;Form;Form\AttestationKey;AttestationKey;Form;HwTest;FM"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="Meta2.cpp"/>
+    <INCLUDEPATH value="HwTest;Form\AttestationKey;AttestationKey;MSIM;Form\MultiSIM;RatConfig;Form\RatConfig;Console;SpecialTest;NFC;DFO;Form\DFO;DRMKey;Form\DRMKey;FM\;BT\;RF\;GPS;Form\GPS;FM;BT;RF;Audio\HD_Recording;Audio\nvram;Audio\Inc;Audio\dmnr;GYROSensor;MATV;GSensor;Cleanboot;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;Equipment\BTT;Security;Form\BT;Form\WiFi;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Output;Equipment\Agilent_8960;Misc;Man;Form;MF_Setup;&quot;Database compare&quot;;Baseband;&quot;Get Version&quot;;&quot;IMEI download&quot;;Audio;.;factory;$(BCB)\include;$(BCB)\include\vcl;&quot;NVRAM Editor&quot;;&quot;META dll&quot;;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;&quot;Equipment\Agilent N4010A&quot;;Comm\PCMCIA\inc;Comm\USB\COM;&quot;Wm meta test&quot;;SPBrom;Audio\Mfile;HDCP;$(BCB)\Include\Atl"/>
+    <LIBPATH value="HwTest;Form\AttestationKey;AttestationKey;MSIM;Form\MultiSIM;&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot;;RatConfig;Form\RatConfig;Console;SpecialTest;NFC;DFO;Form\DFO;DRMKey;Form\DRMKey;FM\;BT\;RF\;HDCP;GPS;Form\GPS;FM;BT;RF;Audio\HD_Recording;Audio\nvram;Audio\dmnr;GYROSensor;MATV;GSensor;Cleanboot;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;Equipment\BTT;Security;D:\;Form\BT;Equipment\WFT;Form\WiFi;WiFi;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Equipment\Agilent_8960;Audio\Mfile;Misc;Man;Form;MF_Setup;&quot;Database compare&quot;;Baseband;&quot;Get Version&quot;;&quot;IMEI download&quot;;Audio;&quot;NVRAM Editor&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;&quot;Wm meta test&quot;"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-N2Output -N0Output -$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-lOutput -IOutput -dvisa32.dll -dage1960_32.dll -dhp661x_32.dll 
+      -dhp663x2_32.dll -dhpe3631a_32.dll -dAgN4010WSODrv.dll -dcontrols.dll 
+      -dmiodll.dll -deboot.dll -D&quot;&quot; -aa -Tpe -GD -s -Gn -M -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="Meta2.cpp" FORMNAME="" UNITNAME="Meta2" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Meta2.res" FORMNAME="" UNITNAME="Meta2.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="factory\META_factory_AboutU.cpp" FORMNAME="Form_About" UNITNAME="META_factory_AboutU" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="factory\meta_utils.cpp" FORMNAME="" UNITNAME="meta_utils.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="factory\com_utils.cpp" FORMNAME="" UNITNAME="com_utils.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_BaseBand.cpp" FORMNAME="frmBaseBand" UNITNAME="form_BaseBand" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_GetVersion.cpp" FORMNAME="frmGetVersion" UNITNAME="form_GetVersion" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_Main.cpp" FORMNAME="frmMainSel" UNITNAME="form_Main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Get Version\get_version.cpp" FORMNAME="" UNITNAME="get_version" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Man\man_active_boot.cpp" FORMNAME="" UNITNAME="man_active_boot.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Man\man_fdm.cpp" FORMNAME="" UNITNAME="man_fdm.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Man\man_metadll.cpp" FORMNAME="" UNITNAME="man_metadll.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Man\man_active.cpp" FORMNAME="" UNITNAME="man_active.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MF_Setup\MfSetupUtil.cpp" FORMNAME="" UNITNAME="MfSetupUtil" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\misc.cpp" FORMNAME="" UNITNAME="misc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NVRAM Editor\NVRAM_LID_Parsing.cpp" FORMNAME="" UNITNAME="NVRAM_LID_Parsing.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NVRAM Editor\META_error_handler.cpp" FORMNAME="" UNITNAME="META_error_handler" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\hp661x_32.lib" FORMNAME="" UNITNAME="hp661x_32.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\hp663x2_32.lib" FORMNAME="" UNITNAME="hp663x2_32.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\age1960_32.lib" FORMNAME="" UNITNAME="age1960_32.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\math_utils.cpp" FORMNAME="" UNITNAME="math_utils" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Man\man_dll.cpp" FORMNAME="" UNITNAME="man_dll" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Baseband\bb_cust_hw.cpp" FORMNAME="" UNITNAME="bb_cust_hw" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Man\man_error.cpp" FORMNAME="" UNITNAME="man_error" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\aftdll.lib" FORMNAME="" UNITNAME="aftdll.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Comm\UART\uart.cpp" FORMNAME="" UNITNAME="uart" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\ft_utils.cpp" FORMNAME="" UNITNAME="ft_utils" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\hpe3631a_32.lib" FORMNAME="" UNITNAME="hpe3631a_32.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\file_utils.cpp" FORMNAME="" UNITNAME="file_utils" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WiFi\wifi_bb.cpp" FORMNAME="" UNITNAME="wifi_bb.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WiFi\wifi_cprx.cpp" FORMNAME="" UNITNAME="wifi_cprx.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WiFi\wifi_cptx.cpp" FORMNAME="" UNITNAME="wifi_cptx.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WiFi\wifi_gnrl.cpp" FORMNAME="" UNITNAME="wifi_gnrl.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WiFi\wifi_lf.cpp" FORMNAME="" UNITNAME="wifi_lf.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WiFi\wifi_mac.cpp" FORMNAME="" UNITNAME="wifi_mac.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WiFi\wifi_ps.cpp" FORMNAME="" UNITNAME="wifi_ps.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WiFi\wifi_stop.cpp" FORMNAME="" UNITNAME="wifi_stop.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WiFi\wifi_txcs.cpp" FORMNAME="" UNITNAME="wifi_txcs.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WiFi\wifi_txdc.cpp" FORMNAME="" UNITNAME="wifi_txdc.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WiFi\wifi_apc.cpp" FORMNAME="" UNITNAME="wifi_apc.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\WiFi\form_WiFiMCR.cpp" FORMNAME="frmWiFiMCR" UNITNAME="form_WiFiMCR" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\WiFi\form_WiFiBBCR.cpp" FORMNAME="frmWiFiBBCR" UNITNAME="form_WiFiBBCR" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\misc_wifi.cpp" FORMNAME="" UNITNAME="misc_wifi" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\WiFi\form_WiFiScript.cpp" FORMNAME="frmWiFiScript" UNITNAME="form_WiFiScript" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WiFi\wifi_sc.cpp" FORMNAME="" UNITNAME="wifi_sc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\iqv.lib" FORMNAME="" UNITNAME="iqv.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NVRAM Editor\nvram_lock.cpp" FORMNAME="" UNITNAME="nvram_lock" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WiFi\wifi_txop.cpp" FORMNAME="" UNITNAME="wifi_txop" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\WiFi\form_WiFiEEPROM.cpp" FORMNAME="frmWiFiEEPROM" UNITNAME="form_WiFiEEPROM" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WiFi\wifi_ee.cpp" FORMNAME="" UNITNAME="wifi_ee" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\WiFi\form_wifitxprofile.cpp" FORMNAME="frmWiFiTxProfile" UNITNAME="form_wifitxprofile" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\WiFi\form_WiFI.cpp" FORMNAME="frmWiFi" UNITNAME="form_WiFI" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\misc_BT.cpp" FORMNAME="" UNITNAME="misc_BT" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NVRAM Editor\NVRAMEditor.cpp" FORMNAME="frmNVRAMEditor" UNITNAME="NVRAMEditor" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\misc_imei.cpp" FORMNAME="" UNITNAME="misc_imei.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\misc_barcode.cpp" FORMNAME="" UNITNAME="misc_barcode.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\misc_bb.cpp" FORMNAME="" UNITNAME="misc_bb.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\misc_audio.cpp" FORMNAME="" UNITNAME="misc_audio" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\AgN4010WSODrv.lib" FORMNAME="" UNITNAME="AgN4010WSODrv.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Man\man_handle.cpp" FORMNAME="" UNITNAME="man_handle" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\BT\form_BT.cpp" FORMNAME="frmBT" UNITNAME="form_BT" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\bt_script.cpp" FORMNAME="" UNITNAME="bt_script.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\bt_pkt.cpp" FORMNAME="" UNITNAME="bt_pkt.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\bt_rf.cpp" FORMNAME="" UNITNAME="bt_rf.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\bt_hci.cpp" FORMNAME="" UNITNAME="bt_hci.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\str_utils.cpp" FORMNAME="" UNITNAME="str_utils" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\bt_stop.cpp" FORMNAME="" UNITNAME="bt_stop" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\misc_ut.cpp" FORMNAME="" UNITNAME="misc_ut" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\SLA_Challenge.lib" FORMNAME="" UNITNAME="SLA_Challenge.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\bt_throughput.cpp" FORMNAME="" UNITNAME="bt_throughput" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Baseband\bb_flash.cpp" FORMNAME="" UNITNAME="bb_flash" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\bt_con.cpp" FORMNAME="" UNITNAME="bt_con" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Baseband\bb_pmic_reg.cpp" FORMNAME="" UNITNAME="bb_pmic_reg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_PMICReg.cpp" FORMNAME="frmPMICReg" UNITNAME="form_PMICReg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\bt_power.cpp" FORMNAME="" UNITNAME="bt_power" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\time_utils.cpp" FORMNAME="" UNITNAME="time_utils" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\WiFi\form_WiFiALC2400M.cpp" FORMNAME="frmWiFiALC2400M" UNITNAME="form_WiFiALC2400M" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WiFi\wifi_alc.cpp" FORMNAME="" UNITNAME="wifi_alc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_Progress.cpp" FORMNAME="m_frmProgress" UNITNAME="form_Progress" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\bt_info_mt6601.cpp" FORMNAME="" UNITNAME="bt_info_mt6601" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\FM\form_FM.cpp" FORMNAME="frmFM" UNITNAME="form_FM" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\misc_FM.cpp" FORMNAME="" UNITNAME="misc_FM" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\miodll.lib" FORMNAME="" UNITNAME="miodll.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\bt_hci_ft.cpp" FORMNAME="" UNITNAME="bt_hci_ft" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\bt_id.cpp" FORMNAME="" UNITNAME="bt_id" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\TraceConversion.lib" FORMNAME="" UNITNAME="TraceConversion.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\bt_info_mt6611.cpp" FORMNAME="" UNITNAME="bt_info_mt6611" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\bt_mt_parse.cpp" FORMNAME="" UNITNAME="bt_mt_parse.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\bt_mt.cpp" FORMNAME="" UNITNAME="bt_mt.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\bt_mt_rs232.cpp" FORMNAME="" UNITNAME="bt_mt_rs232" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\bt_mt_meta.cpp" FORMNAME="" UNITNAME="bt_mt_meta" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Comm\UART\rs232.cpp" FORMNAME="" UNITNAME="rs232" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="General\LogicalControlBase.cpp" FORMNAME="" UNITNAME="LogicalControlBase" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Baseband\bb_reg.cpp" FORMNAME="" UNITNAME="bb_reg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="META dll\interface.h" FORMNAME="" UNITNAME="interface.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\eboot.dll" FORMNAME="" UNITNAME="eboot.dll" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\eboot.lib" FORMNAME="" UNITNAME="eboot.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_WmWifi.cpp" FORMNAME="frmWmWifi" UNITNAME="form_WmWifi" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Baseband\bb_x.cpp" FORMNAME="" UNITNAME="bb_x" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_UnitTest.cpp" FORMNAME="frmUnitTest" UNITNAME="form_UnitTest" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Audio\Inc\ATDSPLib_DLL.h" FORMNAME="" UNITNAME="ATDSPLib_DLL.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\ATDSPLib_DLL.lib" FORMNAME="" UNITNAME="ATDSPLib_DLL.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FM\fm_rds.cpp" FORMNAME="" UNITNAME="fm_rds.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Get Version\UUIDOp.h" FORMNAME="" UNITNAME="UUIDOp.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Get Version\UUIDOp.cpp" FORMNAME="" UNITNAME="UUIDOp.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_Sensor.cpp" FORMNAME="frmSensor" UNITNAME="form_Sensor" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GSensor\GSensor.h" FORMNAME="" UNITNAME="GSensor.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="General\LogicalControlBase.h" FORMNAME="" UNITNAME="LogicalControlBase.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GSensor\GSensor.cpp" FORMNAME="" UNITNAME="GSensor" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Audio\Inc\BLOUD_ACF_DLL.h" FORMNAME="" UNITNAME="BLOUD_ACF_DLL.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\BLOUD_ACF_DLL.dll" FORMNAME="" UNITNAME="BLOUD_ACF_DLL.dll" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\BLOUD_ACF_DLL.lib" FORMNAME="" UNITNAME="BLOUD_ACF_DLL.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\bt_ble.cpp" FORMNAME="" UNITNAME="bt_ble" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\bt_ble.h" FORMNAME="" UNITNAME="bt_ble.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_WmWifimt6620.cpp" FORMNAME="frmWmWifiMT6620" UNITNAME="form_WmWifimt6620" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FM\fm_tx.cpp" FORMNAME="" UNITNAME="fm_tx.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FM\fm_tx.h" FORMNAME="" UNITNAME="fm_tx.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="META dll\mt6620_fm_meta_lib.h" FORMNAME="" UNITNAME="mt6620_fm_meta_lib.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\mt6620_fm_meta.dll" FORMNAME="" UNITNAME="mt6620_fm_meta.dll" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\mt6620_fm_meta.lib" FORMNAME="" UNITNAME="mt6620_fm_meta.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\btRXStandalone.cpp" FORMNAME="" UNITNAME="btRXStandalone" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GYROSensor\GYROSensor.cpp" FORMNAME="" UNITNAME="GYROSensor" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="META dll\spmeta.h" FORMNAME="" UNITNAME="spmeta.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\CommandExecutor.cpp" FORMNAME="" UNITNAME="CommandExecutor" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\SDCardMonitor.cpp" FORMNAME="" UNITNAME="SDCardMonitor" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_2GH_TX_Power_Profile.cpp" FORMNAME="frm2GH_TX_Power_Profile" UNITNAME="form_2GH_TX_Power_Profile" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_5GHz_TX_Power_Profile.cpp" FORMNAME="frm5GHz_TX_Power_Profile" UNITNAME="form_5GHz_TX_Power_Profile" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_NFC_TagDetected.cpp" FORMNAME="frmNFCTagDetected" UNITNAME="form_NFC_TagDetected" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_NFC_PeerToPeer.cpp" FORMNAME="frmNFCPeerToPeer" UNITNAME="form_NFC_PeerToPeer" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_NFC_RawCommand.cpp" FORMNAME="frmNFCRawCommand" UNITNAME="form_NFC_RawCommand" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_NFC.cpp" FORMNAME="frmNFC" UNITNAME="form_NFC" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\misc_NFC.cpp" FORMNAME="" UNITNAME="misc_NFC" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_NFC_TagAccessType1.cpp" FORMNAME="frmNFCTagAccessType1" UNITNAME="form_NFC_TagAccessType1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_NFC_TagAccessType3.cpp" FORMNAME="frmNFCTagAccessType3" UNITNAME="form_NFC_TagAccessType3" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_NFC_TagAccessType2.cpp" FORMNAME="frmNFCTagAccessType2" UNITNAME="form_NFC_TagAccessType2" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\Logger.cpp" FORMNAME="" UNITNAME="Logger" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\SPMetaUT.cpp" FORMNAME="" UNITNAME="SPMetaUT" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_Crystal_Trim.cpp" FORMNAME="frmCrystalTrim" UNITNAME="form_Crystal_Trim" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\Controls.lib" FORMNAME="" UNITNAME="Controls.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WiFi\wifi_man.h" FORMNAME="" UNITNAME="wifi_man.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WiFi\wifi_man.cpp" FORMNAME="" UNITNAME="wifi_man.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Security\SCERT.cpp" FORMNAME="" UNITNAME="SCERT.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Security\AUTH.cpp" FORMNAME="" UNITNAME="AUTH.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\misc_GPS.h" FORMNAME="" UNITNAME="misc_GPS.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\ControlLocker.cpp" FORMNAME="" UNITNAME="ControlLocker.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\ControlLocker.h" FORMNAME="" UNITNAME="ControlLocker.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\misc_GPS.cpp" FORMNAME="" UNITNAME="misc_GPS.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\ControlLocker.cpp" FORMNAME="" UNITNAME="ControlLocker" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\HD_Record_FIR.lib" FORMNAME="" UNITNAME="HD_Record_FIR.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\ControlVisible.cpp" FORMNAME="" UNITNAME="ControlVisible" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_MainPassword.cpp" FORMNAME="frmMainPassword" UNITNAME="form_MainPassword" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\FormPositionSetting.cpp" FORMNAME="" UNITNAME="FormPositionSetting" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\DialogInitialDir.cpp" FORMNAME="" UNITNAME="DialogInitialDir" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\GPS\form_GPSCWAutoTest.h" FORMNAME="" UNITNAME="form_GPSCWAutoTest.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\GPS\form_GPS.cpp" FORMNAME="frmGPS" UNITNAME="form_GPS" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\GPS\form_GPS.ddp" FORMNAME="" UNITNAME="form_GPS.ddp" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\GPS\form_GPS.dfm" FORMNAME="" UNITNAME="form_GPS.dfm" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\GPS\form_GPS.h" FORMNAME="" UNITNAME="form_GPS.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\GPS\form_GPSCWAutoTest.cpp" FORMNAME="frmGPSAutoTest" UNITNAME="form_GPSCWAutoTest" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\GPS\form_GPSCWAutoTest.ddp" FORMNAME="" UNITNAME="form_GPSCWAutoTest.ddp" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\GPS\form_GPSCWAutoTest.dfm" FORMNAME="" UNITNAME="form_GPSCWAutoTest.dfm" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GPS\GPS.h" FORMNAME="" UNITNAME="GPS.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GPS\GPS.cpp" FORMNAME="" UNITNAME="GPS.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_HdcpKey.cpp" FORMNAME="frmHdcpKey" UNITNAME="form_HdcpKey" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HDCP\HDCP_Nvram.cpp" FORMNAME="" UNITNAME="HDCP_Nvram" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BT\bt_man.cpp" FORMNAME="" UNITNAME="bt_man" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\HdcpEncryption.lib" FORMNAME="" UNITNAME="HdcpEncryption.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\DRMKey\form_DRMKey.h" FORMNAME="" UNITNAME="form_DRMKey.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\DRMKey\form_DRMKey.cpp" FORMNAME="frmDRMKeyInstall" UNITNAME="form_DRMKey" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\DRMKey\form_DRMKey.ddp" FORMNAME="" UNITNAME="form_DRMKey.ddp" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\DRMKey\form_DRMKey.dfm" FORMNAME="" UNITNAME="form_DRMKey.dfm" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DRMKey\DRMKey.cpp" FORMNAME="" UNITNAME="DRMKey.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DRMKey\DRMKey.h" FORMNAME="" UNITNAME="DRMKey.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\NFCMain.h" FORMNAME="" UNITNAME="NFCMain.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_pnfc_command.cpp" FORMNAME="" UNITNAME="nfc_pnfc_command.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_pnfc_command.h" FORMNAME="" UNITNAME="nfc_pnfc_command.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_polling.cpp" FORMNAME="" UNITNAME="nfc_polling.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_polling.h" FORMNAME="" UNITNAME="nfc_polling.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_reader.cpp" FORMNAME="" UNITNAME="nfc_reader.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_reader.h" FORMNAME="" UNITNAME="nfc_reader.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_reader_mode.cpp" FORMNAME="OKRightDlg" UNITNAME="nfc_reader_mode" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_reader_mode.dfm" FORMNAME="" UNITNAME="nfc_reader_mode.dfm" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_reader_mode.h" FORMNAME="" UNITNAME="nfc_reader_mode.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_swp_test.cpp" FORMNAME="" UNITNAME="nfc_swp_test.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_swp_test.h" FORMNAME="" UNITNAME="nfc_swp_test.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_tx_carrier_als_on.cpp" FORMNAME="" UNITNAME="nfc_tx_carrier_als_on.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_tx_carrier_als_on.h" FORMNAME="" UNITNAME="nfc_tx_carrier_als_on.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_version_query.cpp" FORMNAME="" UNITNAME="nfc_version_query.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_version_query.h" FORMNAME="" UNITNAME="nfc_version_query.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_virtual_card_function.cpp" FORMNAME="" UNITNAME="nfc_virtual_card_function.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_virtual_card_function.h" FORMNAME="" UNITNAME="nfc_virtual_card_function.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\NFCMain.cpp" FORMNAME="frmNFCNew" UNITNAME="NFCMain" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\NFCMain.dfm" FORMNAME="" UNITNAME="NFCMain.dfm" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\reader_result.cpp" FORMNAME="frm_tag_operation" UNITNAME="reader_result" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\reader_result.dfm" FORMNAME="" UNITNAME="reader_result.dfm" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\reader_result.h" FORMNAME="" UNITNAME="reader_result.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\form_NFC_reader.cpp" FORMNAME="form_AIRM_Reader" UNITNAME="form_NFC_reader" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\form_NFC_reader.ddp" FORMNAME="" UNITNAME="form_NFC_reader.ddp" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\form_NFC_reader.dfm" FORMNAME="" UNITNAME="form_NFC_reader.dfm" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\form_NFC_reader.h" FORMNAME="" UNITNAME="form_NFC_reader.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\form_NFCMain.h" FORMNAME="" UNITNAME="form_NFCMain.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_card_mode.cpp" FORMNAME="" UNITNAME="nfc_card_mode.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_card_mode.h" FORMNAME="" UNITNAME="nfc_card_mode.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_loopback_test.cpp" FORMNAME="" UNITNAME="nfc_loopback_test.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_loopback_test.h" FORMNAME="" UNITNAME="nfc_loopback_test.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_option_setting.cpp" FORMNAME="" UNITNAME="nfc_option_setting.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_option_setting.h" FORMNAME="" UNITNAME="nfc_option_setting.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_p2p.cpp" FORMNAME="" UNITNAME="nfc_p2p.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\nfc_p2p.h" FORMNAME="" UNITNAME="nfc_p2p.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NFC\NFCMain.ddp" FORMNAME="" UNITNAME="NFCMain.ddp" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="meta.rc" FORMNAME="" UNITNAME="meta.rc" CONTAINERID="RCCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="meta.exe.manifest" FORMNAME="" UNITNAME="meta.exe.manifest" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_SpecialTest.cpp" FORMNAME="frmSpecialTest" UNITNAME="form_SpecialTest" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_SpecialTest.ddp" FORMNAME="" UNITNAME="form_SpecialTest.ddp" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_SpecialTest.dfm" FORMNAME="" UNITNAME="form_SpecialTest.dfm" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_SpecialTest.h" FORMNAME="" UNITNAME="form_SpecialTest.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SpecialTest\specialtest_man.h" FORMNAME="" UNITNAME="specialtest_man.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SpecialTest\specialtest_man.cpp" FORMNAME="" UNITNAME="specialtest_man.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\misc_specialtest.h" FORMNAME="" UNITNAME="misc_specialtest.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Misc\misc_specialtest.cpp" FORMNAME="" UNITNAME="misc_specialtest.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_WiFiRSSICOMP.cpp" FORMNAME="frmRSSICOMP" UNITNAME="form_WiFiRSSICOMP" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Console\argcargv.cpp" FORMNAME="" UNITNAME="argcargv.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Console\CommandLineArguments.cpp" FORMNAME="" UNITNAME="CommandLineArguments.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Console\ConsoleExcute.cpp" FORMNAME="" UNITNAME="ConsoleExcute.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Console\ConsoleMode.cpp" FORMNAME="" UNITNAME="ConsoleMode.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Console\XGetopt.cpp" FORMNAME="" UNITNAME="XGetopt.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Console\argcargv.h" FORMNAME="" UNITNAME="argcargv.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Console\CommandLineArguments.h" FORMNAME="" UNITNAME="CommandLineArguments.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Console\ConsoleExcute.h" FORMNAME="" UNITNAME="ConsoleExcute.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Console\ConsoleMode.h" FORMNAME="" UNITNAME="ConsoleMode.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Console\XGetopt.h" FORMNAME="" UNITNAME="XGetopt.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\RatConfig\form_RatConfig.cpp" FORMNAME="frmRatConfig" UNITNAME="form_RatConfig" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\RatConfig\form_RatConfig.ddp" FORMNAME="" UNITNAME="form_RatConfig.ddp" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\RatConfig\form_RatConfig.dfm" FORMNAME="" UNITNAME="form_RatConfig.dfm" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\RatConfig\form_RatConfig.h" FORMNAME="" UNITNAME="form_RatConfig.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RatConfig\rat_config_man.cpp" FORMNAME="" UNITNAME="rat_config_man.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RatConfig\rat_config_man.h" FORMNAME="" UNITNAME="rat_config_man.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\XMLParser.dll" FORMNAME="" UNITNAME="XMLParser.dll" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\XMLParser.lib" FORMNAME="" UNITNAME="XMLParser.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\MultiSIM\form_MultiSIM.cpp" FORMNAME="frmMultiSIM" UNITNAME="form_MultiSIM" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MSIM\msim_man.cpp" FORMNAME="" UNITNAME="msim_man.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MSIM\msim_man.h" FORMNAME="" UNITNAME="msim_man.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_WiFi6632RSSICOMP.cpp" FORMNAME="frm6632RSSICOMP" UNITNAME="form_WiFi6632RSSICOMP" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\AttestationKey\form_AttestationKey.cpp" FORMNAME="frmAttestationKeyInstall" UNITNAME="form_AttestationKey" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AttestationKey\AttestationKey.cpp" FORMNAME="" UNITNAME="AttestationKey" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\form_MetaConnectTime.cpp" FORMNAME="frmMetaConnectTime" UNITNAME="form_MetaConnectTime" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HwTest\hw_test.cpp" FORMNAME="" UNITNAME="hw_test.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HwTest\hw_test.h" FORMNAME="" UNITNAME="hw_test.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\visa32.lib" FORMNAME="" UNITNAME="visa32.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FM\fm_radio.cpp" FORMNAME="" UNITNAME="fm_radio" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Output\MetaCore.lib" FORMNAME="" UNITNAME="MetaCore.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1028
+CodePage=950
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=30
+Item0=GPS;Form\GPS;FM\;BT\;RF\;FM;BT;RF;Audio\HD_Recording;Audio\nvram;Audio\Inc;Audio\dmnr;GYROSensor;MATV;GSensor;Cleanboot;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;Equipment\BTT;Security;Form\BT;Form\WiFi;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Output;Equipment\Agilent_8960;Misc;Man;Form;MF_Setup;Database compare;Baseband;Get Version;IMEI download;Audio;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test;SPBrom;Audio\Mfile;HDCP
+Item1=HDCP;GPS;Form\GPS;FM\;BT\;RF\;FM;BT;RF;Audio\HD_Recording;Audio\nvram;Audio\Inc;Audio\dmnr;GYROSensor;MATV;GSensor;Cleanboot;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;Equipment\BTT;Security;Form\BT;Form\WiFi;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Output;Equipment\Agilent_8960;Misc;Man;Form;MF_Setup;Database compare;Baseband;Get Version;IMEI download;Audio;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test;SPBrom;Audio\Mfile
+Item2=FM\;BT\;RF\;FM;BT;RF;Audio\HD_Recording;Audio\nvram;Audio\Inc;Audio\dmnr;GYROSensor;MATV;GSensor;Cleanboot;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;Equipment\BTT;Security;Form\BT;Form\WiFi;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Output;Equipment\Agilent_8960;Misc;Man;Form;MF_Setup;Database compare;Baseband;Get Version;IMEI download;Audio;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test;SPBrom;Audio\Mfile
+Item3=FM\;BT\;RF\;FM;BT;RF;Audio\HD_Recording;Audio\nvram;Audio\Inc;Audio\dmnr;GYROSensor;MATV;GSensor;Cleanboot;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;Equipment\BTT;Security;Form\BT;Form\WiFi;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Output;Equipment\Agilent_8960;Misc;Man;Form;MF_Setup;Database compare;Baseband;Get Version;IMEI download;Audio;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test;SPBrom;E:\sp_meta_tool\new\SoureCode\UI\Audio\Mfile
+Item4=FM\;BT\;RF\;Audio\HD_Recording;Audio\nvram;Audio\Inc;Audio\dmnr;FM;BT;RF;GYROSensor;MATV;GSensor;Cleanboot;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;Equipment\BTT;Security;Form\BT;Form\WiFi;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Output;Equipment\Agilent_8960;Misc;Man;Form;MF_Setup;Database compare;Baseband;Get Version;IMEI download;Audio;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test;SPBrom;E:\sp_meta_tool\new\SoureCode\UI\Audio\Mfile
+Item5=FM\;BT\;RF\;Audio\HD_Recording;Audio\nvram;Audio\Inc;Audio\dmnr;FM;BT;RF;GYROSensor;MATV;GSensor;Cleanboot;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;Equipment\BTT;Security;Form\BT;Form\WiFi;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Output;Equipment\Agilent_8960;Misc;Man;Form;MF_Setup;Database compare;Baseband;Get Version;IMEI download;Audio;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test;SPBrom
+Item6=Audio\HD_Recording;Audio\nvram;Audio\Inc;Audio\dmnr;FM\;BT\;RF\;FM;BT;RF;GYROSensor;MATV;GSensor;Cleanboot;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;Equipment\BTT;Security;Form\BT;Form\WiFi;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Output;Equipment\Agilent_8960;Misc;Man;Form;MF_Setup;Database compare;Baseband;Get Version;IMEI download;Audio;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test;SPBrom
+Item7=Audio\HD_Recording;Audio\nvram;Audio\dmnr;FM\;BT\;RF\;FM;BT;RF;GYROSensor;MATV;GSensor;Cleanboot;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;Equipment\BTT;Security;Form\BT;Form\WiFi;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Output;Equipment\Agilent_8960;Misc;Man;Form;MF_Setup;Database compare;Baseband;Get Version;IMEI download;Audio;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test;SPBrom
+Item8=FM\;BT\;RF\;FM;BT;RF;GYROSensor;MATV;GSensor;Cleanboot;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;Equipment\BTT;Security;Form\BT;Form\WiFi;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Output;Equipment\Agilent_8960;Misc;Man;Form;MF_Setup;Database compare;Baseband;Get Version;IMEI download;Audio;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test;SPBrom
+Item9=Audio\HD_Recording;FM\;BT\;RF\;FM;BT;RF;Audio\nvram;Audio\dmnr;GYROSensor;MATV;GSensor;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;Form\BT;factory\WiFi;Form\WiFi;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;Output;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\NVRAM;MMI data download;Misc;Man;Form;MF_Setup;Database compare;Baseband;FAT;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;BROM dll;factory\Crystal;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Audio\Inc;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test
+Item10=FM;BT;RF;Audio\HD_Recording;Audio\nvram;Audio\dmnr;GYROSensor;MATV;GSensor;Cleanboot;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;Equipment\BTT;Security;Form\BT;Form\WiFi;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Output;Equipment\Agilent_8960;Audio\Mfile;Misc;Man;Form;MF_Setup;Database compare;Baseband;Get Version;IMEI download;Audio;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Audio\Inc;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test;SPBrom;META dll
+Item11=FM;BT;RF;Audio\HD_Recording;Audio\nvram;Audio\dmnr;GYROSensor;MATV;GSensor;Cleanboot;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;Equipment\BTT;Security;Form\BT;Form\WiFi;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Output;Equipment\Agilent_8960;Audio\Mfile;Misc;Man;Form;MF_Setup;Database compare;Baseband;Get Version;IMEI download;Audio;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;BROM dll;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Audio\Inc;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test;SPBrom
+Item12=FM\;BT\;RF\;Audio\HD_Recording;FM;BT;RF;Audio\nvram;Audio\dmnr;GYROSensor;MATV;GSensor;Cleanboot;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;Equipment\BTT;Security;Form\BT;Form\WiFi;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Output;Equipment\Agilent_8960;Audio\Mfile;Misc;Man;Form;MF_Setup;Database compare;Baseband;Get Version;IMEI download;Audio;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;BROM dll;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Audio\Inc;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test;SPBrom
+Item13=FM\;BT\;RF\;Audio\HD_Recording;FM;BT;RF;Audio\nvram;Audio\dmnr;GYROSensor;MATV;GSensor;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;Form\BT;factory\WiFi;Form\WiFi;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;Output;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\NVRAM;MMI data download;Misc;Man;Form;MF_Setup;Database compare;Baseband;FAT;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;BROM dll;factory\Crystal;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Audio\Inc;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test;E:\sp_meta_tool\new\SoureCode\UI\SPBrom
+Item14=Audio\HD_Recording;FM\;BT\;RF\;FM;BT;RF;Audio\nvram;Audio\dmnr;GYROSensor;MATV;GSensor;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;Form\BT;factory\WiFi;Form\WiFi;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;Output;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\NVRAM;MMI data download;Misc;Man;Form;MF_Setup;Database compare;Baseband;FAT;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;BROM dll;factory\Crystal;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Audio\Inc;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test;E:\sp_meta_tool\new\SoureCode\UI\SPBrom
+Item15=FM;BT;RF;Audio\nvram;Audio\dmnr;GYROSensor;MATV;GSensor;SPBrom;Security;Cleanboot;TDMB;Form\TDMB;Form\FM;Form\BT;Form\WiFi;Equipment\CBT;Equipment\BTT;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Equipment\RCT;Equipment\Agilent_8960;Comm\PCMCIA;Comm\PCMCIA\inc;Comm\UART;Comm\USB\COM;General;Output;Audio\Mfile;Misc;Man;Form;MF_Setup;Database compare;Baseband;Get Version;Audio;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;Equipment\Agilent N4010A;Equipment\IQView;Equipment\WFT;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Audio\Inc;Wm meta test
+Item16=FM\;BT\;RF\;FM;BT;RF;Audio\nvram;Audio\dmnr;GYROSensor;MATV;GSensor;SPBrom;Security;Cleanboot;TDMB;Form\TDMB;Form\FM;Form\BT;Form\WiFi;Equipment\CBT;Equipment\BTT;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Equipment\RCT;Equipment\Agilent_8960;Comm\PCMCIA;Comm\PCMCIA\inc;Comm\UART;Comm\USB\COM;General;Output;Audio\Mfile;Misc;Man;Form;MF_Setup;Database compare;Baseband;Get Version;Audio;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;Equipment\Agilent N4010A;Equipment\IQView;Equipment\WFT;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Audio\Inc;Wm meta test
+Item17=FM\;BT\;RF\;FM;BT;RF;Audio\nvram;Audio\dmnr;GYROSensor;MATV;GSensor;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;Form\BT;factory\WiFi;Form\WiFi;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;Output;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\NVRAM;MMI data download;Misc;Man;Form;MF_Setup;Database compare;Baseband;FAT;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;BROM dll;factory\Crystal;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Audio\Inc;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test
+Item18=FM\;BT\;RF\;Audio\nvram;Audio\dmnr;FM;BT;RF;GYROSensor;MATV;GSensor;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;Form\BT;factory\WiFi;Form\WiFi;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;Output;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\NVRAM;MMI data download;Misc;Man;Form;MF_Setup;Database compare;Baseband;FAT;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;BROM dll;factory\Crystal;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Audio\Inc;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test
+Item19=Audio\nvram;Audio\dmnr;FM\;BT\;RF\;GYROSensor;FM;BT;RF;MATV;GSensor;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;Form\BT;factory\WiFi;Form\WiFi;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;Output;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\NVRAM;MMI data download;Misc;Man;Form;MF_Setup;Database compare;Baseband;FAT;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;BROM dll;factory\Crystal;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Audio\Inc;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test
+Item20=GYROSensor;FM\;BT\;RF\;FM;BT;RF;MATV;GSensor;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;Form\BT;factory\WiFi;Form\WiFi;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;Output;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\NVRAM;MMI data download;Misc;Man;Form;MF_Setup;Database compare;Baseband;FAT;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;BROM dll;factory\Crystal;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Audio\Inc;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test
+Item21=FM\;BT\;RF\;FM;BT;RF;MATV;GSensor;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;Form\BT;factory\WiFi;Form\WiFi;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;Output;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\NVRAM;MMI data download;Misc;Man;Form;MF_Setup;Database compare;Baseband;FAT;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;BROM dll;factory\Crystal;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Audio\Inc;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test
+Item22=FM\;BT\;RF\;MATV;FM;BT;RF;GSensor;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;Form\BT;factory\WiFi;Form\WiFi;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;Output;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\NVRAM;MMI data download;Misc;Man;Form;MF_Setup;Database compare;Baseband;FAT;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;BROM dll;factory\Crystal;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Audio\Inc;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test
+Item23=MATV;FM\;BT\;RF\;FM;BT;RF;GSensor;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;Form\BT;factory\WiFi;Form\WiFi;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;Output;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\NVRAM;MMI data download;Misc;Man;Form;MF_Setup;Database compare;Baseband;FAT;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;BROM dll;factory\Crystal;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Audio\Inc;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test
+Item24=FM\;BT\;RF\;FM;BT;RF;GSensor;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;Form\BT;factory\WiFi;Form\WiFi;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;Output;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\NVRAM;MMI data download;Misc;Man;Form;MF_Setup;Database compare;Baseband;FAT;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;BROM dll;factory\Crystal;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Audio\Inc;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test
+Item25=FM;BT;RF;GSensor;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;Form\BT;factory\WiFi;Form\WiFi;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;Output;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\NVRAM;MMI data download;Misc;Man;Form;MF_Setup;Database compare;Baseband;FAT;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;BROM dll;factory\Crystal;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Audio\Inc;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test
+Item26=FM\;BT\;RF\;GSensor;FM;BT;RF;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;Form\BT;factory\WiFi;Form\WiFi;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;Output;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\NVRAM;MMI data download;Misc;Man;Form;MF_Setup;Database compare;Baseband;FAT;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;BROM dll;factory\Crystal;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Audio\Inc;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test
+Item27=GSensor;FM\;BT\;RF\;FM;BT;RF;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;Form\BT;factory\WiFi;Form\WiFi;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;Output;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\NVRAM;MMI data download;Misc;Man;Form;MF_Setup;Database compare;Baseband;FAT;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;BROM dll;factory\Crystal;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Audio\Inc;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test
+Item28=FM\;BT\;RF\;FM;BT;RF;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;Form\BT;factory\WiFi;Form\WiFi;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;Output;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\NVRAM;MMI data download;Misc;Man;Form;MF_Setup;Database compare;Baseband;FAT;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;BROM dll;factory\Crystal;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Audio\Inc;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test
+Item29=FM\;BT\;RF\;FM;BT;RF;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;Form\BT;factory\WiFi;Form\WiFi;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;Output;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\NVRAM;MMI data download;Misc;Man;Form;MF_Setup;Database compare;Baseband;FAT;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;.;factory;$(BCB)\include;$(BCB)\include\vcl;NVRAM Editor;META dll;BROM dll;factory\Crystal;Equipment\inc;Equipment\Visa;Query;$(BCB)\Projects;$(BCB)\Imports;WiFi;Equipment\WFT;Equipment\IQView;Equipment\Agilent N4010A;Audio\Inc;Comm\PCMCIA\inc;Comm\USB\COM;Wm meta test;Output
+
+[HistoryLists\hlLibraryPath]
+Count=30
+Item0=HDCP;GPS;Form\GPS;FM\;BT\;RF\;FM;BT;RF;Audio\HD_Recording;Audio\nvram;Audio\dmnr;GYROSensor;MATV;GSensor;Cleanboot;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;Equipment\BTT;Security;D:\;Form\BT;Equipment\WFT;Form\WiFi;WiFi;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Equipment\Agilent_8960;Audio\Mfile;Misc;Man;Form;MF_Setup;Database compare;Baseband;Get Version;IMEI download;Audio;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item1=FM\;BT\;RF\;FM;BT;RF;Audio\HD_Recording;Audio\nvram;Audio\dmnr;GYROSensor;MATV;GSensor;Cleanboot;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;Equipment\BTT;Security;D:\;Form\BT;Equipment\WFT;Form\WiFi;WiFi;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Equipment\Agilent_8960;Audio\Mfile;Misc;Man;Form;MF_Setup;Database compare;Baseband;Get Version;IMEI download;Audio;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item2=FM\;BT\;RF\;FM;BT;RF;Audio\HD_Recording;Audio\nvram;Audio\dmnr;GYROSensor;D:\Program Files\Borland\CBuilder6\Projects;MATV;GSensor;D:\Program Files\BCB\Borland\CBuilder6\Projects;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item3=FM\;BT\;RF\;Audio\HD_Recording;FM;BT;RF;Audio\nvram;Audio\dmnr;GYROSensor;D:\Program Files\Borland\CBuilder6\Projects;MATV;GSensor;D:\Program Files\BCB\Borland\CBuilder6\Projects;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item4=Audio\HD_Recording;FM\;BT\;RF\;FM;BT;RF;Audio\nvram;Audio\dmnr;GYROSensor;D:\Program Files\Borland\CBuilder6\Projects;MATV;GSensor;D:\Program Files\BCB\Borland\CBuilder6\Projects;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item5=FM;BT;RF;Audio\HD_Recording;Audio\nvram;Audio\dmnr;GYROSensor;D:\Program Files\Borland\CBuilder6\Projects;MATV;GSensor;D:\Program Files\BCB\Borland\CBuilder6\Projects;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item6=FM;BT;RF;Audio\nvram;Audio\dmnr;GYROSensor;MATV;GSensor;Cleanboot;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;Equipment\BTT;Security;D:\;Form\BT;Equipment\WFT;Form\WiFi;WiFi;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Equipment\Agilent_8960;Audio\Mfile;Misc;Man;Form;MF_Setup;Database compare;Baseband;Get Version;Audio;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item7=FM\;BT\;RF\;FM;BT;RF;Audio\nvram;Audio\dmnr;GYROSensor;MATV;GSensor;Cleanboot;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;Equipment\BTT;Security;D:\;Form\BT;Equipment\WFT;Form\WiFi;WiFi;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Equipment\Agilent_8960;Audio\Mfile;Misc;Man;Form;MF_Setup;Database compare;Baseband;Get Version;Audio;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item8=FM\;BT\;RF\;FM;BT;RF;Audio\nvram;Audio\dmnr;GYROSensor;D:\Program Files\Borland\CBuilder6\Projects;MATV;GSensor;D:\Program Files\BCB\Borland\CBuilder6\Projects;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item9=FM\;BT\;RF\;Audio\nvram;Audio\dmnr;FM;BT;RF;GYROSensor;D:\Program Files\Borland\CBuilder6\Projects;MATV;GSensor;D:\Program Files\BCB\Borland\CBuilder6\Projects;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item10=Audio\nvram;Audio\dmnr;FM\;BT\;RF\;GYROSensor;FM;BT;RF;D:\Program Files\Borland\CBuilder6\Projects;MATV;GSensor;D:\Program Files\BCB\Borland\CBuilder6\Projects;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item11=GYROSensor;FM\;BT\;RF\;D:\Program Files\Borland\CBuilder6\Projects;FM;BT;RF;MATV;GSensor;D:\Program Files\BCB\Borland\CBuilder6\Projects;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item12=D:\Program Files\Borland\CBuilder6\Projects;FM\;BT\;RF\;FM;BT;RF;MATV;GSensor;D:\Program Files\BCB\Borland\CBuilder6\Projects;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item13=FM\;BT\;RF\;FM;BT;RF;MATV;GSensor;D:\Program Files\BCB\Borland\CBuilder6\Projects;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item14=FM\;BT\;RF\;MATV;FM;BT;RF;GSensor;D:\Program Files\BCB\Borland\CBuilder6\Projects;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item15=MATV;FM\;BT\;RF\;FM;BT;RF;GSensor;D:\Program Files\BCB\Borland\CBuilder6\Projects;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item16=FM\;BT\;RF\;FM;BT;RF;GSensor;D:\Program Files\BCB\Borland\CBuilder6\Projects;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item17=FM;BT;RF;GSensor;D:\Program Files\BCB\Borland\CBuilder6\Projects;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item18=FM\;BT\;RF\;GSensor;FM;BT;RF;D:\Program Files\BCB\Borland\CBuilder6\Projects;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item19=GSensor;FM\;BT\;RF\;FM;BT;RF;D:\Program Files\BCB\Borland\CBuilder6\Projects;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item20=FM\;BT\;RF\;FM;BT;RF;D:\Program Files\BCB\Borland\CBuilder6\Projects;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item21=FM\;BT\;RF\;D:\Program Files\BCB\Borland\CBuilder6\Projects;FM;BT;RF;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item22=D:\Program Files\BCB\Borland\CBuilder6\Projects;FM\;BT\;RF\;FM;BT;RF;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test;Output
+Item23=D:\Program Files\BCB\Borland\CBuilder6\Projects;FM\;BT\;RF\;FM;BT;RF;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item24=FM\;BT\;RF\;FM;BT;RF;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item25=FM;BT;RF;HWTest;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item26=FM;BT;RF;Cleanboot;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item27=FM\;BT\;RF\;Cleanboot;FM;BT;RF;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item28=Cleanboot;FM;BT;RF;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+Item29=Cleanboot;FM\;BT\;RF\;FM;BT;RF;CFG Generator\File;CFG Generator;Form\CfgGen;CFG;Comm\PCMCIA;Form\TDMB;TDMB;Form\FM;Equipment\CBT;factory\BT;Equipment\BTT;Security;D:\;BT\CSR;D:\Met;Form\BT;Equipment\WFT;factory\WiFi;Form\WiFi;WiFi;..\..\Ver 3.8\Maui META ver 3.8\Misc;factory\BB;Equipment\Keithley;Query\RF;Query\General;Equipment\CMU;Equipment\DCS;Equipment\CTS;Comm\UART;General;Equipment\RCT;Setting;factory\Form;factory\Crystal;Equipment\Agilent_8960;Audio\Mfile;factory\File;factory\ADC;factory\NVRAM;factory\Agilent8960;MMI data download;Misc;Man;Form;MF_Setup;Database compare;FAT;Baseband;Update parameter;Barcode download;Get Version;IMEI download;Crystal;Audio;iMelody;Melody;NVRAM Editor;C:\Program Files\Borland\CBuilder6\Projects;.;factory;output;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Wm meta test
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=3
+Item0=Output
+Item1=Obj
+Item2=.\Obj\
+
+[HistoryLists\hlFinalOutputDir]
+Count=4
+Item0=Output\
+Item1=Output
+Item2=.\Obj\
+Item3=.\Obj
+
+[HistoryLists\hIBPIOutputDir]
+Count=1
+Item0=Output
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=1
+LinkCGLIB=0
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
